@@ -46,3 +46,12 @@ function fib {
   echo "Looking for \"$1\" in: $HOME..."
   cat $HOME/.bash_history | grep -i "$1"
 }
+
+
+function webperms {
+  # Recursively find all files in the current directory and change to access of 644
+  find ./ -type f -exec chmod 644 {} \;
+ 
+  # Recursively find all directories in the current directory and change to access of 755
+  find ./ -type d -exec chmod 755 {} \; 
+}
