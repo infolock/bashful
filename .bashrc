@@ -39,7 +39,10 @@ alias kernelgccver='cat /proc/version'
 # Installed Package(s) List
 # Update this to match your package manager ( i.e., rpm, yum, apt, etc. )
 ##
+# YUM package list
 alias pkglist='yum list installed'
+# RPM package list
+#alias pkglist='rpm -qa'
 
 
 shopt -s checkwinsize
