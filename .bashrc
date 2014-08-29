@@ -29,15 +29,17 @@ function ulist {
 
 ##
 # OS Distribution and Version Information
-# Update this to match your package manager ( i.e., rpm, yum, apt, etc. )
 #
 ##
 alias distro='cat /etc/*-release'
 alias kernelver='uname -a'
 alias kernelgccver='cat /proc/version'
 
+##
+# Installed Package(s) List
+# Update this to match your package manager ( i.e., rpm, yum, apt, etc. )
+##
 alias pkglist='yum list installed'
-
 
 
 shopt -s checkwinsize
