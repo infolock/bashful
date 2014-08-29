@@ -55,3 +55,9 @@ source $TOOLS_PATH/terms.sh
  
 ### IPTABLES
 source $TOOLS_PATH/iptables.sh
+
+
+##
+# root-ONLY alias'
+##
+# alias allcrontabs='for user in $(cut -f1 -d: /etc/passwd); do crontab -u $user -l; done'
