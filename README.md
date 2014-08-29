@@ -23,7 +23,7 @@ This helper allows you to quickly tar/untar uzing bzip compression.  There are m
 ### ulist
 Displays a list of usernames that have been created
 
-#### OS Distribution and Version Information
+### OS Distribution and Version Information
 ### distro
 Displays information that can be used to determine what OS ( a.k.a, flavor ) is installed on the server.  This is a good way of identifying wether CentOS, Redhat, Ubuntu, etc. is the primary OS type.
 
