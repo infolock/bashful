@@ -59,5 +59,5 @@ Perhaps my most used and favorite shortcut.  Searches your .bash_history for a g
 Recursively applies chmod 644 to all files and chmod 755 to all directories from within the current folder.  Current working path folder's permissions aren't changed tho.
 
 
-## iptables
+## iptables.sh
 Useful for the paranoid (yours included).
