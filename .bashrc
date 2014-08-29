@@ -14,6 +14,32 @@ alias vi='/usr/bin/vim'
 # Helper to just do a yum update on the remi repo ( CentOS only - Assumes you have the remi repo added to yum)
 alias yumremi='/usr/bin/yum --enablerepo=remi update';
  
+##
+# Tar/unTar Shortcut (creates a tar.gz file.  
+# Ex:   minitar example.tar.gz /path/to/folder
+# Ex:   miniuntar example.tar.gz
+##
+alias minitar='tar cvpzf'
+alias miniuntar='tar -xvpzf'
+
+function ulist {
+  sudo awk -F":" '{ print "username: " $1 "\t\tuid:" $3 }' /etc/passwd
+}
+
+
+##
+# OS Distribution and Version Information
+# Update this to match your package manager ( i.e., rpm, yum, apt, etc. )
+#
+##
+alias distro='cat /etc/*-release'
+alias kernelver='uname -a'
+alias kernelgccver='cat /proc/version'
+
+alias pkglist='yum list installed'
+
+
+
 shopt -s checkwinsize
  
 ###  FILE SYSTEM
