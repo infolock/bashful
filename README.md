@@ -5,7 +5,7 @@ I've had these out as a gist for a while now, but figure its probably best to ju
 
 # Contents
 
-## .bashrc
+## File: .bashrc
 Primary `source` file.  
 > NOTE to Mac users:  You'll want to rename this to be .profile instead ( I may actually add a .profile build in the future ).
 >                     Also, you will either need to define the HOME environment key ( if it doesn't already exist ) or simply 
@@ -37,7 +37,7 @@ Displays the current kernel version being used, along with the installed GCC ver
 Displays a list of installed packages.  Currently supports YUM and RPM - just comment out the one you don't need, and uncomment the one you do.
 
 
-## filesystem.sh
+## File: tools/filesystem.sh
 
 ### rmds
 Recursively searches within the current working directory including all sub directories and removes the files .DS_Store, .apdisk or anything with a ._ prefix .   This command takes no params.
@@ -59,5 +59,5 @@ Perhaps my most used and favorite shortcut.  Searches your .bash_history for a g
 Recursively applies chmod 644 to all files and chmod 755 to all directories from within the current folder.  Current working path folder's permissions aren't changed tho.
 
 
-## iptables.sh
+## File: tools/iptables.sh
 Useful for the paranoid (yours included).
