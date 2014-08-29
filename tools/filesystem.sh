@@ -24,7 +24,7 @@ function find_in_files {
     echo "      Usage: $0 <string to search for>"
     echo "       ie. $0 password"
     echo
-    exit
+    return 0
   fi
  
   echo "Looking for \"$1\" in:" `pwd`
@@ -40,7 +40,7 @@ function fib {
   then
     echo "      Usage: $0 <string to search for>"
     echo "       ie. $0 ssh\n"
-    exit
+    return 0
   fi
  
   echo "Looking for \"$1\" in: $HOME..."
