@@ -55,3 +55,7 @@ function webperms {
   # Recursively find all directories in the current directory and change to access of 755
   find ./ -type d -exec chmod 755 {} \; 
 }
+
+# rsync dry run
+alias rsyncd='rsync --dry-run'
+
