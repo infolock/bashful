@@ -60,4 +60,6 @@ Recursively applies chmod 644 to all files and chmod 755 to all directories from
 
 
 ## File: tools/iptables.sh
-Useful for the paranoid (yours included).
+Useful for the paranoid (yours included)
+
+> Note: use the iptables source at your own risk!
